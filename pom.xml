@@ -1,0 +1,16 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.arcanix.arcanix-converters</groupId>
+  <artifactId>arcanix-converters</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Arcanix Converters</name>
+  <description>Simple Java library providing utilities for converting String scalar values to objects</description>
+
+  <developers>
+    <developer>
+        <name>Jean-Philippe Ricard</name>
+        <organization>Arcanix</organization>
+        <url>http://www.arcanix.com/</url>
+    </developer>
+  </developers>
+</project>
