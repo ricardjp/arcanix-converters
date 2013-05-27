@@ -51,6 +51,10 @@ public final class Converters {
 
         this.converters.put(targetClass, converter);
     }
+    
+    public Converter<?> getConverter(final Class<?> targetType) {
+    	return this.converters.get(targetType);
+    }
 
     public Object convert(final Class<?> targetType, final String value) throws ConversionException {
         if (value == null) {
