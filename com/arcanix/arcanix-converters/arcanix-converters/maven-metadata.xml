@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>com.arcanix.arcanix-converters</groupId>
+  <artifactId>arcanix-converters</artifactId>
+  <versioning>
+    <versions>
+      <version>0.0.1-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20130527031908</lastUpdated>
+  </versioning>
+</metadata>
