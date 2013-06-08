@@ -29,6 +29,21 @@ public final class Converters {
 
     private final Map<Class<?>, Converter<?>> converters = new HashMap<Class<?>, Converter<?>>();
 
+    private static final Converters DEFAULT_CONVERTERS = new Converters();
+    
+    static {
+    	DEFAULT_CONVERTERS.add(new BooleanConverter());
+    	DEFAULT_CONVERTERS.add(new DoubleConverter());
+    	DEFAULT_CONVERTERS.add(new IntegerConverter());
+    	DEFAULT_CONVERTERS.add(new LongConverter());
+    	DEFAULT_CONVERTERS.add(new StringConverter());
+    }
+    
+    // TODO immutable Converters
+    public static Converters getDefaultConverters() {
+    	return DEFAULT_CONVERTERS;
+    }
+    
     public void add(final Converter<?> converter) {
         if (converter == null) {
             throw new NullPointerException("Converter cannot be null");
