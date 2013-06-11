@@ -29,6 +29,8 @@ public final class Converters {
 
     private final Map<Class<?>, Converter<?>> converters = new HashMap<Class<?>, Converter<?>>();
 
+    private static final DefaultConverter DEFAULT = new DefaultConverter();
+    
     private static final Converters DEFAULT_CONVERTERS = new Converters();
     
     static {
@@ -77,7 +79,7 @@ public final class Converters {
         }
         Converter<?> converter = (Converter<?>) this.converters.get(targetType);
         if (converter == null) {
-            throw new ConversionException("Could not find a converter for target type: " + targetType.getName());
+        	return DEFAULT.convert(targetType, value);
         }
         return converter.convert(value);
     }
